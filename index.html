@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><Activity-1></Activity-1></title>
+    <script src="jquery.js"></script>
+</head>
+<body>
+    <button onclick="changecolor()">Click Me</button>
+    <div id="Div1" style="width: 500px;height: 200px;background: red;">Hello World</div>
+    <script>
+        var i = 0
+        function changecolor(){
+            if(i%2==0){
+                $("#Div1").css("background","red")
+            }else{
+                $("#Div1").css("background","blue")
+            }
+            i++
+        }
+    </script>
+</body>
+</html>
